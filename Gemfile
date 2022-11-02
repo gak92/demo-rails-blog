@@ -59,6 +59,8 @@ gem 'bulma-rails', '~> 0.9.4'
 # Simple Form - Forms made easy!
 gem 'simple_form', '~> 5.1'
 
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
@@ -78,7 +80,7 @@ group :development do
   gem 'guard', '~> 2.18'
 
   # Guard::LiveReload automatically reloads your browser when 'view' files are modified.
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
 end
 
 group :test do
