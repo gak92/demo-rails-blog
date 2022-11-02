@@ -50,9 +50,6 @@ gem "bootsnap", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
-# Provides a better error page for Rails and other Rack apps
-gem 'better_errors', '~> 2.9', '>= 2.9.1'
-
 # A modern CSS framework based on Flexbox
 gem 'bulma-rails', '~> 0.9.4'
 
@@ -81,6 +78,9 @@ group :development do
 
   # Guard::LiveReload automatically reloads your browser when 'view' files are modified.
   gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
+
+  # Provides a better error page for Rails and other Rack apps
+  gem 'better_errors', '~> 2.9', '>= 2.9.1'
 end
 
 group :test do
